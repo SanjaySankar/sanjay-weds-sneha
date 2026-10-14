@@ -1,0 +1,827 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sneha &amp; Sanjay</title>
+<meta name="description" content="Wedding invitation · Sneha & Sanjay · Thrissur, December 2026">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Parisienne&family=Great+Vibes&family=Alex+Brush&family=Italianno&family=Dancing+Script:wght@500&family=Cormorant+Garamond:ital,wght@1,500&family=Marcellus+SC&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+Malayalam:wght@500&display=swap">
+
+<script>
+/* ==========================================================================
+   EDIT EVERYTHING HERE
+   - Photos: drop your files into the assets/ folder using these names,
+     or change the paths below (any image URL works too).
+     A missing photo shows a gold placeholder instead of breaking the page.
+   - Leave a field blank ("") to hide it.
+   ========================================================================== */
+window.INVITE = {
+  groom: "Sanjay",
+  bride: "Sneha",
+  intro: "With the blessings of our families, we invite you to the wedding of",
+  place: "Thrissur, Kerala",
+
+  nameFont: "Italianno",              // font for the names (see the list in the font picker)
+  showFontPicker: false,                 // set to false before sharing with guests
+  heroStyle: "arch",                    // main photo frame: arch, temple, medallion, print, wide, soft
+  showPhotoStylePicker: false,           // set to false before sharing with guests
+
+  music: "assets/music.mp3",            // your song file; if it is missing, a built-in tune plays instead
+  defaultTune: "mohanam",              // built-in fallback: "mohanam", "tanpura" or "musicbox"
+  showMusicPicker: false,                // set to false before sharing with guests
+
+  photos: {
+    hero:    "assets/couple.jpg",       // main couple photo
+    galleryStyle: "prints",           // grid, carousel, slideshow, prints, filmstrip
+    gallery: [                          // add or remove as many as you like
+      { src: "assets/gallery-1.jpg", caption: "Engaged and ready to go all in" },
+      { src: "assets/gallery-2.jpg", caption: "Collecting a few degrees along the way" },
+      { src: "assets/gallery-3.jpg", caption: "First official house visit!!" },
+      { src: "assets/gallery-4.jpg", caption: "Great rivals make for great couples?" }
+    ]
+  },
+
+  // key = short code used in personal links (see README)
+  // Event text sits on top of the event picture: textTop = how far down it starts,
+  // ink / soft / accent = text colours that suit that picture.
+  events: [
+    { key: "sangeet",   name: "Sangeet",   date: "2026-12-10", time: "7:00 PM",
+      venue: "Chakolas Palazzo",   area: "Thrissur",
+      map: "https://maps.google.com/?q=Chakolas+Palazzo,+Thrissur",
+      photo: "assets/sangeet.jpg", textTop: "7%", ink: "#7d2a4f", soft: "#5f5560", accent: "#a8823a",
+      line: "An evening of music, dance and family" },
+    { key: "wedding",   name: "Wedding",   date: "2026-12-12", time: "10:30 AM",
+      venue: "Nandanam Auditorium", area: "Thrissur",
+      map: "https://maps.google.com/?q=Nandanam+Auditorium,+Thrissur",
+      photo: "assets/wedding.jpg", textTop: "41%", textWidth: "80%", ink: "#8a2e14", soft: "#6e5034", accent: "#b07a1e",
+      line: "Join us as we tie the knot" },
+    { key: "reception", name: "Reception", date: "2026-12-13", time: "6:30 PM",
+      venue: "Chakolas Pavilion",   area: "Thrissur",
+      map: "https://maps.google.com/?q=Chakolas+Pavilion,+Thrissur",
+      photo: "assets/reception.jpg", textTop: "9%", ink: "#f7f2e4", soft: "#e8dcc0", accent: "#e2c27a",
+      line: "Dinner and celebrations with the newlyweds" }
+  ],
+
+  countdownTo: "wedding",               // event key the countdown points at
+
+  // RSVP → Google Form (same method as the original site). Leave blank to just show a thank-you.
+  rsvp: {
+    deadline: "",                         // e.g. "Kindly reply by 25 November"
+    formResponseUrl: "https://docs.google.com/forms/d/e/1FAIpQLSchFO8oGkNf4D0zPCzCDeZQnK1ssyKi0ZSugJH43vkW3aYv4Q/formResponse",                  // https://docs.google.com/forms/d/e/XXXX/formResponse
+    entryName: "entry.877086558", entryGuests: "entry.1498135098", entryAttending: "entry.1424661284"   // entry.123456 IDs from your form
+  }
+};
+</script>
+
+<style>
+/* Kasavu invitation: ivory handloom ground, gold zari bands, bottle-green ink. Single deliberate light look. */
+:root{
+  color-scheme: light;
+  --temple:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 125' preserveAspectRatio='none'><path d='M0 125 V48 Q0 40 7 37 Q8 28 16 25 Q18 16 27 13 Q32 5 42 6 Q46 0 50 0 Q54 0 58 6 Q68 5 73 13 Q82 16 84 25 Q92 28 93 37 Q100 40 100 48 V125 Z'/></svg>");
+  --ivory:#f7f2e4; --ivory-2:#efe6cf; --gold:#b48a2c; --gold-hi:#d9b45a;
+  --green:#1f4a3a; --green-2:#2f6550; --ink:#2b2a22; --ink-soft:#6b6550;
+  --display:"Marcellus SC", "Trajan Pro", Georgia, serif;
+  --script:"Parisienne", "Snell Roundhand", cursive;
+  --body:"EB Garamond", Garamond, Georgia, serif;
+  --mal:"Noto Serif Malayalam", "Manjari", serif;
+  --zari: repeating-linear-gradient(90deg, var(--gold) 0 6px, var(--gold-hi) 6px 9px, var(--gold) 9px 14px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ivory);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.55;overflow-x:hidden}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+a{color:var(--green)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* zari band */
+.band{height:14px;background:var(--zari);position:relative}
+.band::before,.band::after{content:"";position:absolute;left:0;right:0;height:2px;background:var(--green)}
+.band::before{top:-5px}.band::after{bottom:-5px}
+
+/* ---------- envelope ---------- */
+#cover{position:fixed;inset:0;z-index:50;background:var(--ivory);display:grid;place-items:center;padding:24px 16px;transition:opacity .9s ease, transform .9s ease}
+#cover.open{opacity:0;transform:scale(1.04);pointer-events:none}
+.cover-card{width:min(440px,100%);text-align:center;padding:42px 24px 36px;border:1px solid var(--gold);outline:6px solid var(--ivory-2);outline-offset:-14px;background:var(--ivory);position:relative}
+.cover-card::before,.cover-card::after{content:"";position:absolute;left:0;right:0;height:10px;background:var(--zari)}
+.cover-card::before{top:0}.cover-card::after{bottom:0}
+.mal{font-family:var(--display);color:var(--green);font-size:.82rem;letter-spacing:.28em;text-transform:uppercase;margin-top:6px}
+.lamp{width:84px;height:auto;margin:14px auto 6px;display:block}
+.names{font-family:var(--script);color:var(--green);font-weight:400;line-height:1;margin:6px 0 10px;font-size:clamp(3rem,13vw,4.4rem)}
+.serif-names .names,.serif-names .event h3{font-style:italic;font-weight:500}
+.names .amp{display:block;font-family:var(--body);font-style:italic;color:var(--gold);font-size:.38em;margin:.15em 0}
+.cover-date{font-family:var(--display);letter-spacing:.22em;font-size:.82rem;color:var(--ink-soft)}
+.btn{font-family:var(--display);letter-spacing:.18em;font-size:.82rem;border:1px solid var(--green);background:var(--green);color:var(--ivory);padding:14px 26px;cursor:pointer;margin-top:24px;transition:background .2s,color .2s;text-decoration:none;display:inline-block}
+.btn:hover{background:var(--ivory);color:var(--green)}
+.btn.ghost{background:transparent;color:var(--green)}
+.btn.ghost:hover{background:var(--green);color:var(--ivory)}
+
+/* ---------- page ---------- */
+main{padding-inline:16px}
+.wrap{max-width:980px;margin:0 auto}
+section{padding-block:64px}
+.eyebrow{font-family:var(--display);letter-spacing:.28em;font-size:.78rem;color:var(--gold);text-align:center;margin:0 0 8px}
+h2{font-family:var(--display);font-weight:400;color:var(--green);text-align:center;font-size:clamp(1.7rem,5vw,2.3rem);letter-spacing:.06em;margin:0 0 8px;text-wrap:balance}
+.lede{text-align:center;color:var(--ink-soft);font-style:italic;margin:0 auto;max-width:34ch}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding-block:56px 40px}
+.hero-text{text-align:center}
+.hero-text .intro{font-style:italic;color:var(--ink-soft);margin:0}
+.hero-text .names{font-size:clamp(3.4rem,9vw,5.6rem);margin:14px 0}
+.hero-text .when{font-family:var(--display);letter-spacing:.2em;color:var(--green);font-size:.95rem;margin:0}
+.hero-text .where{margin:4px 0 0;color:var(--ink-soft)}
+.count{display:flex;justify-content:center;gap:22px;margin-top:28px;font-variant-numeric:tabular-nums}
+.count div{min-width:58px}
+.count b{display:block;font-family:var(--display);font-weight:400;font-size:2rem;color:var(--green);line-height:1}
+.count span{font-family:var(--display);font-size:.66rem;letter-spacing:.2em;color:var(--gold)}
+
+/* photo frames (all replaceable) */
+.frame{position:relative;overflow:hidden;background:var(--ivory-2);border:1px solid var(--gold);max-width:100%}
+.frame img{display:block;width:100%;height:100%;object-fit:cover}
+/* main photo: one picture, six frame styles */
+.hero-pic{position:relative;justify-self:center;width:100%;max-width:420px}
+.hero-pic .frame{width:100%;aspect-ratio:4/5}
+.hero-pic .frame img{object-position:77% 50%}
+.hero-pic .deco,.hero-pic .cap{display:none}
+.hero-pic[data-style="arch"]{padding:10px}
+.hero-pic[data-style="arch"] .frame{border-radius:999px 999px 6px 6px;outline:1px solid var(--gold);outline-offset:8px}
+.hero-pic[data-style="temple"] .frame{border:0;-webkit-mask:var(--temple) center/100% 100% no-repeat;mask:var(--temple) center/100% 100% no-repeat}
+.hero-pic[data-style="temple"] .deco{display:block;position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.hero-pic[data-style="medallion"]{max-width:380px;padding:12px}
+.hero-pic[data-style="medallion"] .frame{aspect-ratio:1;border-radius:50%;border:0;box-shadow:0 0 0 4px var(--ivory),0 0 0 5px var(--gold),0 0 0 11px var(--ivory),0 0 0 12px var(--gold)}
+.hero-pic[data-style="medallion"] .frame img{object-position:88% 50%}
+.hero-pic[data-style="print"]{max-width:390px;background:#fffdf8;padding:14px 14px 0;box-shadow:0 14px 30px rgba(43,42,34,.16),0 2px 6px rgba(43,42,34,.08);transform:rotate(-2deg)}
+.hero-pic[data-style="print"] .frame{border:0}
+.hero-pic[data-style="print"] .cap{display:block;margin:0;padding:10px 0 16px;text-align:center;font-family:var(--script);color:var(--green);font-size:1.8rem;line-height:1.2}
+.hero-pic[data-style="wide"]{max-width:none;padding-block:16px;background:var(--zari) top/100% 10px no-repeat,var(--zari) bottom/100% 10px no-repeat}
+.hero-pic[data-style="wide"] .frame{aspect-ratio:3/2;border:0}
+.hero-pic[data-style="wide"] .frame img{object-position:50% 50%}
+.hero:has(.hero-pic[data-style="wide"]){grid-template-columns:1fr;gap:32px}
+.hero-pic[data-style="soft"] .frame{border:0;background:transparent;-webkit-mask-image:radial-gradient(ellipse 60% 58% at 50% 52%,#000 62%,transparent 100%);mask-image:radial-gradient(ellipse 60% 58% at 50% 52%,#000 62%,transparent 100%)}
+.frame.empty img{display:none}
+.frame.empty::after{content:attr(data-label);position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:18px;
+  font-family:var(--display);letter-spacing:.14em;font-size:.72rem;color:var(--gold);
+  background:radial-gradient(circle at 50% 42%, rgba(217,180,90,.22), transparent 60%), repeating-linear-gradient(45deg, transparent 0 14px, rgba(180,138,44,.07) 14px 15px)}
+
+/* events */
+.events{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;margin:40px auto 0;max-width:calc(var(--n,3) * 340px + (var(--n,3) - 1) * 28px)}
+.event{background:#fffdf6;border:1px solid var(--gold);display:flex;flex-direction:column;
+  --ev-ink:var(--green);--ev-soft:var(--ink-soft);--ev-accent:var(--gold)}
+.event .art{position:relative}
+.event .frame{aspect-ratio:2/3;border:0}
+.event:has(.frame:not(.ready)){--ev-ink:var(--green);--ev-soft:var(--ink-soft);--ev-accent:var(--gold)}
+.event-body{position:absolute;left:0;right:0;margin-inline:auto;top:var(--ev-top,8%);width:var(--ev-w,86%);text-align:center;display:flex;flex-direction:column;gap:4px;color:var(--ev-ink)}
+.event h3{font-family:var(--script);font-weight:400;color:var(--ev-ink);font-size:clamp(2.2rem,8vw,2.7rem);line-height:1.05;margin:0}
+.event .d{font-family:var(--display);letter-spacing:.16em;font-size:.74rem;color:var(--ev-accent);margin:2px 0 0}
+.event .v{margin:4px 0 0;font-weight:500;font-size:1rem;color:var(--ev-ink)}
+.event .l{margin:0;color:var(--ev-soft);font-style:italic;font-size:.9rem;line-height:1.35}
+.event .acts{padding:14px 12px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;border-top:1px solid var(--gold)}
+.event .btn{margin:0;padding:10px 16px;font-size:.7rem}
+
+/* gallery */
+.gallery{margin-top:36px;position:relative}
+.gallery .frame{aspect-ratio:3/4}
+.gallery .frame img{object-position:50% 28%}
+.gallery .g-cap{position:absolute;left:0;right:0;bottom:0;margin:0;padding:34px 14px 12px;background:linear-gradient(rgba(20,32,26,0),rgba(20,32,26,.78));color:#fffdf6;font-style:italic;font-size:.95rem;line-height:1.3;text-align:center;text-wrap:balance}
+.gallery[data-style="slideshow"] .g-cap{font-size:1.1rem;padding-bottom:16px}
+.gallery[data-style="filmstrip"] .g-cap{font-size:.8rem;padding:24px 8px 8px}
+.gallery[data-style="prints"] .g-cap{position:static;background:none;color:var(--green);font-style:normal;font-family:var(--script);font-size:1.3rem;line-height:1.15;padding:10px 2px 2px}
+.g-nav{display:none;justify-content:center;align-items:center;gap:14px;margin-top:18px}
+.g-nav button{font:inherit;background:transparent;border:1px solid var(--gold);color:var(--green);width:36px;height:36px;border-radius:50%;cursor:pointer;display:grid;place-items:center;padding:0}
+.g-nav button:hover{background:var(--green);color:var(--ivory);border-color:var(--green)}
+.g-dots{display:flex;gap:8px}
+.g-dots button{width:8px;height:8px;border-radius:50%;border:1px solid var(--gold);background:transparent;padding:0}
+.g-dots button[aria-current="true"]{background:var(--gold)}
+/* grid: staggered still row */
+.gallery[data-style="grid"] .g-track{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.gallery[data-style="grid"] .frame:nth-child(4n+2),.gallery[data-style="grid"] .frame:nth-child(4n+3){transform:translateY(22px)}
+/* carousel: swipeable row that advances on its own */
+.gallery[data-style="carousel"] .g-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;scroll-behavior:smooth;padding-bottom:4px}
+.gallery[data-style="carousel"] .g-track::-webkit-scrollbar{display:none}
+.gallery[data-style="carousel"] .frame{flex:0 0 calc((100% - 28px)/3);scroll-snap-align:start}
+.gallery[data-style="carousel"] .g-nav,.gallery[data-style="slideshow"] .g-nav{display:flex}
+/* slideshow: one photo at a time, slow zoom and crossfade */
+.gallery[data-style="slideshow"] .g-track{position:relative;width:min(440px,100%);margin:0 auto;aspect-ratio:3/4;outline:1px solid var(--gold);outline-offset:8px}
+.gallery[data-style="slideshow"] .frame{position:absolute;inset:0;border:0;opacity:0;transition:opacity 1.2s ease}
+.gallery[data-style="slideshow"] .frame.on{opacity:1}
+.gallery[data-style="slideshow"] .frame.on img{animation:kb 6s ease-out forwards}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.08)}}
+/* prints: scattered photo prints */
+.gallery[data-style="prints"] .g-track{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;padding-block:10px 20px}
+.gallery[data-style="prints"] .frame{aspect-ratio:auto;width:min(220px,42vw);border:0;background:#fffdf8;padding:10px 10px 12px;box-shadow:0 10px 24px rgba(43,42,34,.16);transition:transform .35s ease}
+.gallery[data-style="prints"] .frame img{aspect-ratio:3/4;height:auto}
+.gallery[data-style="prints"] .frame:nth-child(odd){transform:rotate(-3deg)}
+.gallery[data-style="prints"] .frame:nth-child(even){transform:rotate(2.5deg) translateY(14px)}
+.gallery[data-style="prints"] .frame:hover{transform:rotate(0) scale(1.04);z-index:2}
+/* filmstrip: continuous slow scroll */
+.gallery[data-style="filmstrip"]{overflow:hidden;margin-inline:-16px;padding-block:14px;background:var(--green)}
+.gallery[data-style="filmstrip"] .g-track{display:flex;gap:12px;width:max-content;animation:strip 32s linear infinite}
+.gallery[data-style="filmstrip"]:hover .g-track{animation-play-state:paused}
+.gallery[data-style="filmstrip"] .frame{height:300px;width:auto;aspect-ratio:3/4;border:2px solid var(--gold-hi)}
+@keyframes strip{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.gallery[data-style="filmstrip"]{overflow-x:auto}}
+
+/* rsvp */
+.rsvp{background:var(--green);color:var(--ivory);margin-inline:-16px;padding-inline:16px}
+.rsvp h2{color:var(--ivory)}
+.rsvp .lede{color:#d9d3bd}
+form{max-width:440px;margin:32px auto 0;display:grid;gap:18px}
+label{font-family:var(--display);letter-spacing:.16em;font-size:.72rem;color:var(--gold-hi);display:grid;gap:6px}
+input,select{font:inherit;font-family:var(--body);font-size:1.05rem;color:var(--ivory);background:transparent;border:0;border-bottom:1px solid rgba(217,180,90,.6);padding:8px 2px;border-radius:0}
+select option{color:var(--ink);background:var(--ivory)}
+input::placeholder{color:#a9b5a6}
+form .btn{background:var(--gold);border-color:var(--gold);color:var(--green);margin-top:8px}
+form .btn:hover{background:transparent;color:var(--gold-hi)}
+.thanks{text-align:center;font-family:var(--script);font-size:2.2rem;color:var(--gold-hi);margin-top:32px}
+
+footer{text-align:center;padding-block:40px 56px}
+footer .names{font-size:2.6rem}
+footer p{margin:0;color:var(--ink-soft);font-style:italic}
+
+/* music */
+#musicBtn{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:45;width:40px;height:40px;border-radius:50%;border:1px solid var(--gold);background:var(--ivory);color:var(--green);display:grid;place-items:center;cursor:pointer;box-shadow:0 4px 14px rgba(31,74,58,.18);padding:0}
+#musicBtn svg{width:18px;height:18px}
+#musicBtn .ic-on{display:none}
+#musicBtn.on .ic-on{display:block;animation:spin 6s linear infinite}
+#musicBtn.on .ic-off{display:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* back to the opening screen */
+#backBtn{position:fixed;left:16px;top:calc(16px + env(safe-area-inset-top,0px));z-index:45;display:flex;align-items:center;gap:6px;height:40px;padding:0 14px 0 10px;border-radius:20px;border:1px solid var(--gold);background:var(--ivory);color:var(--green);font-family:var(--display);letter-spacing:.14em;font-size:.68rem;cursor:pointer;box-shadow:0 4px 14px rgba(31,74,58,.18)}
+#backBtn svg{width:16px;height:16px}
+#backBtn:hover{background:var(--green);color:var(--ivory)}
+
+/* font picker */
+#tweak{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:45;display:flex;flex-direction:column;gap:8px;background:var(--ivory);border:1px solid var(--gold);padding:10px 12px;box-shadow:0 4px 14px rgba(31,74,58,.18);width:min(340px, calc(100vw - 88px))}
+#tweak .row{display:grid;grid-template-columns:5.6em minmax(0,1fr) auto;align-items:center;gap:8px}
+#tweak .lbl{font-family:var(--display);letter-spacing:.12em;font-size:.62rem;color:var(--gold)}
+#tweak select{font:inherit;font-size:.9rem;color:var(--green);background:transparent;border:0;border-bottom:1px solid var(--gold);padding:3px 2px;min-width:0;width:100%}
+#tweak select option{color:var(--ink);background:var(--ivory)}
+#tweak .up{font-family:var(--display);letter-spacing:.12em;font-size:.6rem;color:var(--green);border:1px solid var(--green);padding:5px 8px;cursor:pointer;white-space:nowrap;background:transparent}
+#tweak .up:hover{background:var(--green);color:var(--ivory)}
+#tweak .sp{margin:0;font-size:.78rem;line-height:1.35;color:var(--ink-soft);font-style:italic}
+#tweak .hide{align-self:flex-end;border-color:transparent;padding:2px 4px;color:var(--ink-soft)}
+#tweak .mini-show{display:none}
+#tweak.mini{width:auto;padding:6px}
+#tweak.mini > :not(.mini-show){display:none}
+#tweak.mini .mini-show{display:inline-block}
+
+[hidden]{display:none!important}
+/* petals (replaces glitter) */
+.petal{position:fixed;top:-20px;z-index:60;pointer-events:none;width:10px;height:14px;border-radius:60% 0 60% 0;background:var(--gold-hi);opacity:.85;animation:fall linear forwards}
+.petal.w{background:#fff8e6;border:1px solid var(--gold-hi)}
+@keyframes fall{to{transform:translate(var(--dx),105vh) rotate(540deg);opacity:.2}}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;gap:28px}
+  .hero-pic{max-width:340px}
+  .hero-pic[data-style="wide"]{max-width:none}
+  .gallery[data-style="grid"] .g-track{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .gallery[data-style="grid"] .frame:nth-child(4n+2),.gallery[data-style="grid"] .frame:nth-child(4n+3){transform:none}
+  .gallery[data-style="grid"] .frame:nth-child(even){transform:translateY(18px)}
+  .gallery[data-style="carousel"] .frame{flex-basis:78%}
+  .gallery[data-style="filmstrip"] .frame{height:220px}
+}
+</style>
+
+</head>
+<body style="margin:0">
+<!-- Envelope / opening screen -->
+<div id="cover">
+  <div class="cover-card">
+    <div class="mal">Wedding Invitation</div>
+    <svg class="lamp" viewBox="0 0 80 50" aria-hidden="true" fill="none" stroke-linecap="round">
+      <circle cx="30" cy="25" r="16" stroke="#b48a2c" stroke-width="3.2"/>
+      <circle cx="50" cy="25" r="16" stroke="#d9b45a" stroke-width="3.2"/>
+      <path d="M36.4 10.35A16 16 0 0 1 42.9 15.5" stroke="#f7f2e4" stroke-width="6.5"/>
+      <path d="M36.4 10.35A16 16 0 0 1 42.9 15.5" stroke="#b48a2c" stroke-width="3.2"/>
+      <path d="M50 6.5l2 2.5l-2 2.5l-2-2.5z" fill="#1f4a3a" stroke="none"/>
+    </svg>
+    <h1 class="names" id="coverNames"></h1>
+    <div class="cover-date" id="coverDate"></div>
+    <button class="btn" id="openBtn" type="button">Open Invitation</button>
+  </div>
+</div>
+
+<main id="main">
+  <div class="wrap">
+    <section class="hero">
+      <figure class="hero-pic" id="heroPic" data-style="arch" style="margin:0">
+        <div class="frame" data-photo="hero"></div>
+        <svg class="deco" viewBox="0 0 100 125" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 125 V48 Q0 40 7 37 Q8 28 16 25 Q18 16 27 13 Q32 5 42 6 Q46 0 50 0 Q54 0 58 6 Q68 5 73 13 Q82 16 84 25 Q92 28 93 37 Q100 40 100 48 V125 Z" fill="none" stroke="#b48a2c" stroke-width="2.5" vector-effect="non-scaling-stroke"/>
+          <path d="M0 125 V48 Q0 40 7 37 Q8 28 16 25 Q18 16 27 13 Q32 5 42 6 Q46 0 50 0 Q54 0 58 6 Q68 5 73 13 Q82 16 84 25 Q92 28 93 37 Q100 40 100 48 V125 Z" fill="none" stroke="#b48a2c" stroke-width="1" vector-effect="non-scaling-stroke" transform="translate(-4 -4) scale(1.08 1.064)"/>
+        </svg>
+        <figcaption class="cap" id="heroCap"></figcaption>
+      </figure>
+      <div class="hero-text">
+        <p class="intro" id="intro"></p>
+        <h1 class="names" id="heroNames"></h1>
+        <p class="when" id="heroWhen"></p>
+        <p class="where" id="heroWhere"></p>
+        <div class="count" id="count" aria-live="polite"></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="band" aria-hidden="true"></div>
+
+  <section id="events">
+    <div class="wrap">
+      <p class="eyebrow">You are invited to</p>
+      <h2>The Celebrations</h2>
+      <p class="lede">We would be honoured to have you with us.</p>
+      <div class="events" id="eventList"></div>
+    </div>
+  </section>
+
+  <section id="gallery" style="padding-top:8px">
+    <div class="wrap">
+      <p class="eyebrow">Moments</p>
+      <h2 id="galNames">Sanjay &amp; Sneha</h2>
+      <div class="gallery" id="galleryGrid" data-style="carousel">
+        <div class="g-track" id="gTrack"></div>
+        <div class="g-nav">
+          <button type="button" id="gPrev" aria-label="Previous photo">&#8249;</button>
+          <div class="g-dots" id="gDots"></div>
+          <button type="button" id="gNext" aria-label="Next photo">&#8250;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rsvp" id="rsvp">
+    <div class="wrap">
+      <p class="eyebrow" style="color:var(--gold-hi)">Kindly respond</p>
+      <h2>RSVP</h2>
+      <p class="lede" id="deadline">We kindly request your response.</p>
+      <form id="rsvpForm" novalidate>
+        <label for="rName">Your name<input id="rName" required autocomplete="name" placeholder="Full name"></label>
+        <label for="rGuests">Number of guests<input id="rGuests" type="number" min="1" max="20" value="1" inputmode="numeric"></label>
+        <label for="rAttend">Attending<select id="rAttend" required></select></label>
+        <button class="btn" type="submit" id="rSubmit">Send RSVP</button>
+      </form>
+      <p class="thanks" id="thanks" hidden></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="names" id="footNames"></div>
+    <p id="footPlace"></p>
+  </footer>
+</main>
+
+<!-- Preview tools (hidden from guests via showFontPicker / showMusicPicker) -->
+<div id="tweak" hidden>
+  <div class="row" data-row="gstyle">
+    <span class="lbl">GALLERY</span>
+    <select id="galSel" aria-label="Gallery style"></select>
+  </div>
+  <div class="row" data-row="style">
+    <span class="lbl">PHOTO STYLE</span>
+    <select id="styleSel" aria-label="Main photo style"></select>
+  </div>
+  <div class="row" data-row="font">
+    <span class="lbl">NAME FONT</span>
+    <select id="fontSel" aria-label="Font for the names"></select>
+  </div>
+  <div class="row" data-row="music">
+    <span class="lbl">MUSIC</span>
+    <select id="musicSel" aria-label="Background music"></select>
+    <label class="up" for="musicFile">Upload</label>
+    <input type="file" id="musicFile" accept="audio/*" hidden>
+  </div>
+  <p class="sp" id="musicNote" hidden></p>
+  <button type="button" class="up hide" id="tweakHide">Hide</button>
+  <button type="button" class="up mini-show" id="tweakShow">Customize</button>
+</div>
+
+<button id="backBtn" type="button" aria-label="Back to the opening screen" hidden>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+  BACK
+</button>
+
+<button id="musicBtn" type="button" aria-label="Play music" hidden>
+  <svg class="ic-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg>
+  <svg class="ic-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/><path d="M3 3l18 18"/></svg>
+</button>
+<audio id="bgMusic" loop preload="metadata"></audio>
+
+<script>
+(() => {
+  const C = window.INVITE;
+  const $ = id => document.getElementById(id);
+  const fmt = (iso, opts) => new Date(iso + "T00:00:00+05:30").toLocaleDateString("en-IN", { timeZone: "Asia/Kolkata", ...opts });
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;" }[c]));
+
+  /* Personal links: …/#wedding-reception or ?events=wedding,reception shows only those events */
+  const allKeys = C.events.map(e => e.key);
+  const fromQuery = new URLSearchParams(location.search).get("events");
+  const fromHash = location.hash.slice(1);
+  const tokens = (fromQuery || fromHash || "").toLowerCase().split(/[,\-]/);
+  const pick = tokens.filter(k => allKeys.includes(k));
+  /* Bride's side link: add #sneha (or #sneha-wedding etc.) to show her name first */
+  const brideFirst = true;   // sneha.html: Sneha's side always shows her name first
+  const [n1, n2] = brideFirst ? [C.bride, C.groom] : [C.groom, C.bride];
+  const events = pick.length ? C.events.filter(e => pick.includes(e.key)) : C.events;
+
+  /* Photo frame: tries the image, falls back to a labelled placeholder */
+  function fillFrame(el, src, label) {
+    el.dataset.label = label;
+    if (!src) { el.classList.add("empty"); return; }
+    const img = new Image();
+    img.alt = label; img.loading = "lazy"; img.decoding = "async";
+    img.onerror = () => el.classList.add("empty");
+    img.onload = () => { el.classList.remove("empty"); el.classList.add("ready"); };
+    img.src = src;
+    el.appendChild(img);
+  }
+  const labelFor = p => "Photo · " + (p || "").split("/").pop();
+
+  /* Name font + picker */
+  const FONTS = [
+    ["Parisienne", "cursive"], ["Great Vibes", "cursive"], ["Alex Brush", "cursive"],
+    ["Italianno", "cursive"], ["Dancing Script", "cursive"], ["Cormorant Garamond", "serif"], ["Pinyon Script", "cursive"]
+  ];
+  const setFont = name => {
+    const f = FONTS.find(x => x[0] === name) || FONTS[0];
+    document.documentElement.style.setProperty("--script", `"${f[0]}", ${f[1]}`);
+    document.documentElement.classList.toggle("serif-names", f[1] === "serif");
+  };
+  let chosen = C.nameFont;
+  if (!C.showFontPicker) document.querySelector('#tweak [data-row="font"]')?.remove();
+  if (C.showFontPicker) {
+    try { chosen = localStorage.getItem("name_font") || chosen; } catch {}
+    const sel = $("fontSel");
+    sel.innerHTML = FONTS.map(([n]) => `<option value="${n}" style="font-family:'${n}'">${n}</option>`).join("");
+    sel.value = FONTS.some(x => x[0] === chosen) ? chosen : FONTS[0][0];
+    sel.addEventListener("change", () => { setFont(sel.value); try { localStorage.setItem("name_font", sel.value); } catch {} });
+    $("tweak").hidden = false;
+  }
+  setFont(chosen);
+
+  /* Names */
+  const namesHTML = `${esc(n1)}<span class="amp">&amp;</span>${esc(n2)}`;
+  $("coverNames").innerHTML = namesHTML;
+  $("heroNames").innerHTML = namesHTML;
+  $("footNames").innerHTML = `${esc(n1)} &amp; ${esc(n2)}`;
+  $("galNames").innerHTML = `${esc(n1)} &amp; ${esc(n2)}`;
+  $("intro").textContent = C.intro || "";
+  document.title = `${n1} & ${n2}`;
+
+  const main = C.events.find(e => e.key === C.countdownTo) || events[0];
+  const first = events[0], last = events[events.length - 1];
+  const monthYear = fmt(main.date, { month: "long", year: "numeric" });
+  $("coverDate").textContent = events.length > 1
+    ? `${fmt(first.date,{day:"numeric"})} – ${fmt(last.date,{day:"numeric"})} ${monthYear}`.toUpperCase()
+    : fmt(first.date, { day: "numeric", month: "long", year: "numeric" }).toUpperCase();
+  $("heroWhen").textContent = fmt(main.date, { weekday: "long", day: "numeric", month: "long", year: "numeric" }).toUpperCase();
+  $("heroWhere").textContent = C.place || "";
+  $("footPlace").textContent = [C.place, monthYear].filter(Boolean).join(" · ");
+
+  fillFrame(document.querySelector('[data-photo="hero"]'), C.photos.hero, labelFor(C.photos.hero));
+
+  /* Main photo frame style */
+  const STYLES = [["arch","Arch"],["temple","Temple arch"],["medallion","Medallion"],["print","Photo print"],["wide","Full width"],["soft","Soft fade"]];
+  const setStyle = st => { $("heroPic").dataset.style = STYLES.some(x => x[0] === st) ? st : "arch"; };
+  $("heroCap").textContent = fmt(main.date, { day: "numeric", month: "long", year: "numeric" });
+  let heroStyle = C.heroStyle;
+  if (C.showPhotoStylePicker) {
+    try { heroStyle = localStorage.getItem("hero_style") || heroStyle; } catch {}
+    const ss = $("styleSel");
+    ss.innerHTML = STYLES.map(([v, t]) => `<option value="${v}">${t}</option>`).join("");
+    ss.value = STYLES.some(x => x[0] === heroStyle) ? heroStyle : "arch";
+    ss.addEventListener("change", () => { setStyle(ss.value); try { localStorage.setItem("hero_style", ss.value); } catch {} });
+    $("tweak").hidden = false;
+  } else document.querySelector('#tweak [data-row="style"]')?.remove();
+  setStyle(heroStyle);
+
+  /* Countdown */
+  const to24 = t => { const m = /^(\d{1,2}):(\d{2})\s*([ap]\.?m\.?)?$/i.exec((t || "").trim()); if (!m) return "00:00"; let h = +m[1]; if (m[3]) { const pm = /p/i.test(m[3]); if (pm && h < 12) h += 12; if (!pm && h === 12) h = 0; } return String(h).padStart(2,"0") + ":" + m[2]; };
+  const target = new Date(main.date + "T" + to24(main.time) + ":00+05:30");
+  function tick() {
+    let s = Math.max(0, Math.floor((target - Date.now()) / 1000));
+    const d = Math.floor(s / 86400); s %= 86400;
+    const h = Math.floor(s / 3600); s %= 3600;
+    const m = Math.floor(s / 60);
+    $("count").innerHTML = [[d,"Days"],[h,"Hours"],[m,"Mins"]].map(([n,l]) => `<div><b>${n}</b><span>${l.toUpperCase()}</span></div>`).join("");
+  }
+  tick(); setInterval(tick, 30000);
+
+  /* Events */
+  $("eventList").style.setProperty("--n", events.length);
+  $("eventList").innerHTML = events.map(e => `
+    <article class="event" id="ev-${esc(e.key)}" style="${e.textTop ? `--ev-top:${esc(e.textTop)};` : ""}${e.textWidth ? `--ev-w:${esc(e.textWidth)};` : ""}${e.ink ? `--ev-ink:${esc(e.ink)};` : ""}${e.soft ? `--ev-soft:${esc(e.soft)};` : ""}${e.accent ? `--ev-accent:${esc(e.accent)};` : ""}">
+      <div class="art">
+      <div class="frame" data-ev="${esc(e.key)}"></div>
+      <div class="event-body">
+        <h3>${esc(e.name)}</h3>
+        <p class="d">${fmt(e.date,{weekday:"short",day:"numeric",month:"short",year:"numeric"}).toUpperCase()}${e.time ? " · " + esc(e.time) : ""}</p>
+        <p class="v">${esc(e.venue)}${e.area ? ", " + esc(e.area) : ""}</p>
+        ${e.line ? `<p class="l">${esc(e.line)}</p>` : ""}
+      </div>
+      </div>
+        <div class="acts">
+          ${e.map ? `<a class="btn ghost" href="${esc(e.map)}" target="_blank" rel="noopener">Directions</a>` : ""}
+          <a class="btn" href="#rsvp" data-scroll>RSVP</a>
+        </div>
+    </article>`).join("");
+  events.forEach(e => fillFrame(document.querySelector(`[data-ev="${e.key}"]`), e.photo, labelFor(e.photo)));
+
+  /* Gallery */
+  const gal = (C.photos.gallery || []).filter(Boolean).map(g => typeof g === "string" ? { src: g } : g);
+  if (!gal.length) $("gallery").hidden = true;
+  const GT = $("gTrack"), GB = $("galleryGrid");
+  gal.forEach(g => {
+    const f = document.createElement("figure"); f.className = "frame"; f.style.margin = "0"; GT.appendChild(f);
+    fillFrame(f, g.src, g.caption || labelFor(g.src));
+    if (g.caption) { const c = document.createElement("figcaption"); c.className = "g-cap"; c.textContent = g.caption; f.appendChild(c); }
+  });
+  const realFrames = [...GT.children];
+  const GSTYLES = [["carousel","Carousel"],["slideshow","Slideshow"],["grid","Fixed row"],["prints","Photo prints"],["filmstrip","Filmstrip"]];
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let gIdx = 0, gTimer = null;
+  const dots = () => [...$("gDots").children];
+  function gShow(i) {
+    gIdx = (i + realFrames.length) % realFrames.length;
+    dots().forEach((d, k) => d.setAttribute("aria-current", k === gIdx ? "true" : "false"));
+    if (GB.dataset.style === "slideshow") realFrames.forEach((f, k) => f.classList.toggle("on", k === gIdx));
+    if (GB.dataset.style === "carousel") GT.scrollTo({ left: realFrames[gIdx].offsetLeft - GT.offsetLeft, behavior: reduced ? "auto" : "smooth" });
+  }
+  function gAuto() {
+    clearInterval(gTimer); gTimer = null;
+    if (reduced || !["carousel","slideshow"].includes(GB.dataset.style)) return;
+    gTimer = setInterval(() => gShow(gIdx + 1), GB.dataset.style === "slideshow" ? 5000 : 3500);
+  }
+  $("gDots").innerHTML = realFrames.map((_, k) => `<button type="button" aria-label="Photo ${k + 1}"></button>`).join("");
+  dots().forEach((d, k) => d.addEventListener("click", () => { gShow(k); gAuto(); }));
+  $("gPrev").addEventListener("click", () => { gShow(gIdx - 1); gAuto(); });
+  $("gNext").addEventListener("click", () => { gShow(gIdx + 1); gAuto(); });
+  GB.addEventListener("mouseenter", () => { clearInterval(gTimer); gTimer = null; });
+  GB.addEventListener("mouseleave", gAuto);
+  GT.addEventListener("touchstart", () => { clearInterval(gTimer); gTimer = null; }, { passive: true });
+  GT.addEventListener("scroll", () => {
+    if (GB.dataset.style !== "carousel") return;
+    const x = GT.scrollLeft; let best = 0;
+    realFrames.forEach((f, k) => { if (Math.abs(f.offsetLeft - GT.offsetLeft - x) < Math.abs(realFrames[best].offsetLeft - GT.offsetLeft - x)) best = k; });
+    gIdx = best; dots().forEach((d, k) => d.setAttribute("aria-current", k === best ? "true" : "false"));
+  }, { passive: true });
+  function setGallery(st) {
+    if (!GSTYLES.some(x => x[0] === st)) st = "carousel";
+    GB.dataset.style = st;
+    GT.querySelectorAll(".clone").forEach(c => c.remove());
+    realFrames.forEach(f => f.classList.remove("on"));
+    if (st === "filmstrip" && !reduced) realFrames.forEach(f => { const c = f.cloneNode(true); c.classList.add("clone"); c.setAttribute("aria-hidden", "true"); GT.appendChild(c); });
+    GT.scrollLeft = 0; gShow(0); gAuto();
+  }
+  let galStyle = C.photos.galleryStyle;
+  if (C.showPhotoStylePicker) {
+    try { galStyle = localStorage.getItem("gallery_style") || galStyle; } catch {}
+    const gs = $("galSel");
+    gs.innerHTML = GSTYLES.map(([v, t]) => `<option value="${v}">${t}</option>`).join("");
+    gs.value = GSTYLES.some(x => x[0] === galStyle) ? galStyle : "carousel";
+    gs.addEventListener("change", () => { setGallery(gs.value); try { localStorage.setItem("gallery_style", gs.value); } catch {} });
+  } else document.querySelector('#tweak [data-row="gstyle"]')?.remove();
+  if (gal.length) setGallery(galStyle);
+
+  /* In-page links scroll without touching the URL (keeps personal links intact) */
+  document.addEventListener("click", ev => {
+    const a = ev.target.closest("a[data-scroll]");
+    if (!a) return;
+    ev.preventDefault();
+    document.querySelector(a.getAttribute("href"))?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  /* RSVP options follow the events this guest is invited to */
+  const opts = [["", "Select an option"]];
+  if (events.length > 1) opts.push(["All events", "Yes, all " + (events.length === 2 ? "both " : "") + "events"]);
+  events.forEach(e => opts.push([e.name + " only", `Yes, ${e.name}${events.length > 1 ? " only" : ""}`]));
+  opts.push(["Regretfully declines", "Regretfully decline"]);
+  $("rAttend").innerHTML = opts.map(([v,t]) => `<option value="${esc(v)}"${v ? "" : " disabled selected"}>${esc(t)}</option>`).join("");
+  if (C.rsvp.deadline) $("deadline").textContent = C.rsvp.deadline;
+
+  const store = { get(k){ try { return localStorage.getItem(k); } catch { return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch {} } };
+  const done = name => { $("rsvpForm").hidden = true; $("thanks").hidden = false; $("thanks").textContent = `Thank you, ${name}!`; };
+  if (store.get("rsvp_name")) done(store.get("rsvp_name"));
+
+  $("rsvpForm").addEventListener("submit", async ev => {
+    ev.preventDefault();
+    const name = $("rName").value.trim(), guests = $("rGuests").value, attending = $("rAttend").value;
+    if (!name) { $("rName").focus(); return; }
+    if (!attending) { $("rAttend").focus(); return; }
+    const btn = $("rSubmit"); btn.disabled = true; btn.textContent = "Sending…";
+    const R = C.rsvp;
+    if (R.formResponseUrl && R.entryName && R.entryGuests && R.entryAttending) {
+      const body = new URLSearchParams();
+      if (R.entryName) body.append(R.entryName, name);
+      if (R.entryGuests) body.append(R.entryGuests, guests);
+      if (R.entryAttending) body.append(R.entryAttending, attending);
+      try {
+        await fetch(R.formResponseUrl, { method: "POST", mode: "no-cors", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: body.toString() });
+      } catch (e) {
+        btn.disabled = false; btn.textContent = "Send RSVP";
+        $("deadline").textContent = "That didn't go through. Check your connection and try again.";
+        return;
+      }
+    }
+    store.set("rsvp_name", name);
+    done(name);
+  });
+
+  /* ---------- Music ----------
+     Sources: your song file (C.music), an uploaded file (preview only, kept in this browser),
+     or a built-in tune synthesised live in the browser (no copyright, no download). */
+  const audio = $("bgMusic"), mb = $("musicBtn");
+
+  const Synth = (() => {
+    let ctx, master, bus, timer = null, nextT = 0, step = 0, preset = null, idx = 0;
+    const hz = m => 440 * Math.pow(2, (m - 69) / 12);
+    const SCALE = [60, 62, 64, 67, 69, 72, 74, 76, 79, 81];  // Mohanam: Sa Ri Ga Pa Dha
+    const PRESETS = {
+      mohanam:  { tempo: .42, wave: "triangle", base: 0, vol: .17, dur: 1.5, drone: true },
+      tanpura:  { tempo: .62, wave: null,       base: 0, vol: 0,   dur: 0,   drone: true, droneOnly: true },
+      musicbox: { tempo: .30, wave: "sine",     base: 12, vol: .12, dur: 1.9, drone: false }
+    };
+    function init() {
+      if (ctx) return;
+      ctx = new (window.AudioContext || window.webkitAudioContext)();
+      master = ctx.createGain(); master.gain.value = 0; master.connect(ctx.destination);
+      bus = ctx.createGain(); bus.connect(master);
+      const delay = ctx.createDelay(); delay.delayTime.value = .34;
+      const fb = ctx.createGain(); fb.gain.value = .3;
+      const wet = ctx.createGain(); wet.gain.value = .32;
+      bus.connect(delay); delay.connect(fb); fb.connect(delay); delay.connect(wet); wet.connect(master);
+    }
+    function note(m, t, dur, vol, wave) {
+      const o = ctx.createOscillator(), g = ctx.createGain(), f = ctx.createBiquadFilter();
+      o.type = wave; o.frequency.value = hz(m);
+      f.type = "lowpass"; f.frequency.setValueAtTime(Math.min(hz(m) * 7, 12000), t); f.frequency.exponentialRampToValueAtTime(hz(m) * 1.6, t + dur);
+      g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(vol, t + .012); g.gain.exponentialRampToValueAtTime(.0004, t + dur);
+      o.connect(f); f.connect(g); g.connect(bus); o.start(t); o.stop(t + dur + .05);
+    }
+    function schedule(t) {
+      const P = PRESETS[preset];
+      if (P.drone) {   // tanpura cycle: Pa Sa' Sa' Sa
+        const cyc = P.droneOnly ? 4 : 8, pos = step % cyc;
+        const pat = P.droneOnly ? [43, 48, 48, 36] : [43, null, 48, null, 48, null, 36, null];
+        const m = pat[pos];
+        if (m) note(m, t, P.droneOnly ? 3.6 : 3, P.droneOnly ? .09 : .05, "sawtooth");
+      }
+      if (P.droneOnly) return;
+      if (step % 16 === 15 || Math.random() < .16) { if (step % 16 === 15) idx = 0; return; }
+      idx = Math.max(0, Math.min(SCALE.length - 1, idx + [-2, -1, -1, 1, 1, 2, 0][Math.floor(Math.random() * 7)]));
+      note(SCALE[idx] + P.base, t, P.dur, P.vol, P.wave);
+      if (preset === "musicbox" && step % 8 === 0) note(48, t, 2.2, .08, "sine");
+    }
+    return {
+      start(name) {
+        init(); ctx.resume?.();
+        preset = name; step = 0; idx = 0;
+        master.gain.cancelScheduledValues(ctx.currentTime);
+        master.gain.setTargetAtTime(.85, ctx.currentTime, .4);
+        if (timer) clearInterval(timer);
+        nextT = ctx.currentTime + .08;
+        timer = setInterval(() => {
+          while (nextT < ctx.currentTime + .25) { schedule(nextT); nextT += PRESETS[preset].tempo; step++; }
+        }, 60);
+      },
+      stop() {
+        if (!ctx || !timer) return;
+        master.gain.setTargetAtTime(0, ctx.currentTime, .15);
+        const t = timer; timer = null; setTimeout(() => clearInterval(t), 500);
+      }
+    };
+  })();
+
+  const TRACKS = [];
+  if (C.music) TRACKS.push({ id: "file", label: "Your song (" + C.music.split("/").pop() + ")", kind: "file", src: C.music });
+  TRACKS.push(
+    { id: "mohanam",  label: "Veena · Mohanam raga", kind: "synth" },
+    { id: "tanpura",  label: "Tanpura drone",        kind: "synth" },
+    { id: "musicbox", label: "Music box",            kind: "synth" }
+  );
+  const fallback = TRACKS.find(t => t.id === C.defaultTune) ? C.defaultTune : "mohanam";
+  let current = C.music ? "file" : fallback, playing = false;
+
+  const sel = $("musicSel");
+  const renderOptions = () => { sel.innerHTML = TRACKS.map(t => `<option value="${t.id}">${esc(t.label)}</option>`).join(""); sel.value = current; };
+  const track = () => TRACKS.find(t => t.id === current) || TRACKS.find(t => t.id === fallback);
+  const setBtn = on => { playing = on; mb.classList.toggle("on", on); mb.setAttribute("aria-label", on ? "Turn music off" : "Turn music on"); };
+
+  const Player = window.__player = {
+    play() {
+      const t = track(); current = t.id;
+      if (t.kind === "synth") { audio.pause(); Synth.start(t.id); setBtn(true); return; }
+      Synth.stop();
+      if (audio.getAttribute("src") !== t.src) audio.src = t.src;
+      audio.play().then(() => setBtn(true)).catch(() => setBtn(false));
+    },
+    pause() { audio.pause(); Synth.stop(); setBtn(false); },
+    choose(id) { current = id; sel.value = id; if (playing) this.play(); }
+  };
+  mb.addEventListener("click", () => playing ? Player.pause() : Player.play());
+
+  // Song file missing or unplayable → drop it and use the built-in tune
+  audio.addEventListener("error", () => {
+    const i = TRACKS.findIndex(t => t.kind === "file" && t.src === audio.getAttribute("src"));
+    if (i < 0) return;
+    const wasCurrent = TRACKS[i].id === current;
+    TRACKS.splice(i, 1);
+    if (wasCurrent) { current = fallback; renderOptions(); if (playing) Player.play(); }
+    else renderOptions();
+  });
+  if (C.music) audio.src = C.music;   // probe early (metadata only)
+
+  // Uploaded song: preview only, remembered in this browser via IndexedDB
+  const IDB = {
+    db() { return new Promise((res, rej) => { try { const r = indexedDB.open("invite", 1); r.onupgradeneeded = () => r.result.createObjectStore("kv"); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); } catch (e) { rej(e); } }); },
+    async get(k) { try { const d = await this.db(); return await new Promise(res => { const q = d.transaction("kv").objectStore("kv").get(k); q.onsuccess = () => res(q.result); q.onerror = () => res(null); }); } catch { return null; } },
+    async set(k, v) { try { const d = await this.db(); d.transaction("kv", "readwrite").objectStore("kv").put(v, k); } catch {} }
+  };
+  function addUpload(blob, name) {
+    const src = URL.createObjectURL(blob);
+    const old = TRACKS.findIndex(t => t.id === "upload");
+    if (old >= 0) { URL.revokeObjectURL(TRACKS[old].src); TRACKS.splice(old, 1); }
+    TRACKS.unshift({ id: "upload", label: "Uploaded: " + name, kind: "file", src });
+    renderOptions();
+  }
+
+  if (C.showMusicPicker) {
+    $("tweak").hidden = false;
+    let saved = null; try { saved = localStorage.getItem("music_choice"); } catch {}
+    if (saved && TRACKS.some(t => t.id === saved)) current = saved;
+    renderOptions();
+    sel.addEventListener("change", () => { Player.choose(sel.value); try { localStorage.setItem("music_choice", sel.value); } catch {} });
+    $("musicFile").addEventListener("change", e => {
+      const f = e.target.files[0]; if (!f) return;
+      if (!f.type.startsWith("audio/")) { $("musicNote").hidden = false; $("musicNote").textContent = "That isn't an audio file. Choose an MP3 or M4A."; return; }
+      addUpload(f, f.name);
+      IDB.set("music", { blob: f, name: f.name });
+      $("musicNote").hidden = false;
+      $("musicNote").textContent = "Plays only in your browser. For guests, send me the file or save it as assets/music.mp3.";
+      Player.choose("upload");
+      try { localStorage.setItem("music_choice", "upload"); } catch {}
+      if (!playing) { mb.hidden = false; Player.play(); }
+      e.target.value = "";
+    });
+    IDB.get("music").then(v => {
+      if (!v || !v.blob) return;
+      addUpload(v.blob, v.name || "song");
+      if (saved === "upload") { current = "upload"; sel.value = "upload"; }
+    });
+  } else {
+    document.querySelector('#tweak [data-row="music"]')?.remove();
+    renderOptions();
+  }
+
+  // Collapse / expand the preview panel
+  if (!$("tweak").querySelector("select")) $("tweak").remove();
+  else {
+    const tw = $("tweak");
+    $("tweakHide").addEventListener("click", () => tw.classList.add("mini"));
+    $("tweakShow").addEventListener("click", () => tw.classList.remove("mini"));
+  }
+
+  /* Open invitation */
+  function petals() {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    for (let i = 0; i < 46; i++) {
+      const p = document.createElement("div");
+      p.className = "petal" + (i % 3 ? "" : " w");
+      p.style.left = Math.random() * 100 + "vw";
+      p.style.setProperty("--dx", (Math.random() - .5) * 220 + "px");
+      const dur = 3 + Math.random() * 2.5, delay = Math.random() * .8;
+      p.style.animationDuration = dur + "s"; p.style.animationDelay = delay + "s";
+      document.body.appendChild(p);
+      setTimeout(() => p.remove(), (dur + delay) * 1000);
+    }
+  }
+  let coverTimer = null;
+  $("openBtn").addEventListener("click", () => {
+    $("cover").classList.add("open");
+    petals();
+    mb.hidden = false;
+    $("backBtn").hidden = false;
+    Player.play();
+    window.scrollTo(0, 0);
+    clearTimeout(coverTimer);
+    coverTimer = setTimeout(() => { $("cover").hidden = true; }, 950);
+  });
+  $("backBtn").addEventListener("click", () => {
+    clearTimeout(coverTimer);
+    Player.pause();
+    mb.hidden = true;
+    $("backBtn").hidden = true;
+    const cv = $("cover");
+    cv.hidden = false;
+    void cv.offsetWidth;            // restart the fade
+    cv.classList.remove("open");
+    window.scrollTo(0, 0);
+    $("openBtn").focus();
+  });
+})();
+</script>
+</body>
+</html>
